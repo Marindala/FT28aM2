@@ -9,6 +9,18 @@ var toDoItems = [];
 // agregar tu nombre al final del texto actual. Ej: 'Aplicación creada por Franco'
 // Tu código acá:
 
+let listaSpan = document.querySelector("span")
+
+listaSpan.document.createElement ("#createdBy")
+
+listaSpan.innerHTML = "Marina"
+
+listaSpan.appendChild(listaSpan);
+
+
+
+
+
 
 
 // Crear una clase denominada 'ToDo' cuyo constructor debe recibir un único parámetro del tipo string
