@@ -9,13 +9,9 @@ var toDoItems = [];
 // agregar tu nombre al final del texto actual. Ej: 'Aplicación creada por Franco'
 // Tu código acá:
 
-let listaSpan = document.querySelector("span")
+  let span = document.querySelector('#createdBy');
+  span.innerHTML = span.innerHTML + " Marina";
 
-listaSpan.document.createElement ("#createdBy")
-
-listaSpan.innerHTML = "Marina"
-
-listaSpan.appendChild(listaSpan);
 
 
 
@@ -30,8 +26,10 @@ listaSpan.appendChild(listaSpan);
 // 2) 'complete'    : debe setearse en false
 // Ayuda: usar 'this' en el constructor
 
-function ToDo () {
+function ToDo (description) {
   // Tu código acá:
+  this.description = description;
+  this.complete = false;
 
 }
 
@@ -41,6 +39,7 @@ function ToDo () {
 // Debe setear el atributo 'complete' del ToDo en true
 
 // Tu código acá:
+ 
 
 
 
