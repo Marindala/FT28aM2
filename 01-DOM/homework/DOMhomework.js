@@ -84,14 +84,15 @@ toDoShell.className = "toDoShell"; //ingreso a la propiedad y asigno.
 
   var toDoText = document.createElement('span'); //creamos el tag span
   toDoText.innerHTML = todo.description; //toDo text es span .agrego un texto con description?//innerhtml =
-  toDoText.id = 'index'; //cada elemento va a tener un ID propio
+  toDoText.id = index; //cada elemento va a tener un ID propio
 
   if(todo.complete){ //te coloco la línea sobre el todo o no?
     toDoText.className = 'completeText'; //a la clase seteale la clase "completeText"
   }
  toDoShell.appendChild(toDoText);
 
- toDoText.addEventListener('click', completeToDo)
+ toDoText.addEventListener('click', completeToDo);
+
  return toDoShell;
 }
 
@@ -135,7 +136,7 @@ function displayToDos() {
   let toDoContainer = document.getElementById('toDoContainer'); //con getElementById no se agrega #?//o querySelect
   toDoContainer.innerHTML = ''; //para linkearlo
   let buildedToDos = buildToDos(toDoItems);//te paso el arreglo que está vacio
-  for (let i = 0; i < buildedToDos.length; index++) { //itero sobre el resultado de let buildedToDos
+  for (let i = 0; i < buildedToDos.length; i++) { //itero sobre el resultado de let buildedToDos
     toDoContainer.appendChild(buildedToDos[i]); //html x cada toDo  va a agregar div/span/div/
     
   }
@@ -190,7 +191,7 @@ function completeToDo(event) {
   // DESCOMENTAR LA SIGUIENTE LINEA
    const index = event.target.id;
   // Tu código acá:
-  toDoItems = [index].completeToDo();
+  toDoItems[index].completeToDo();
   displayToDos();
 
 }
