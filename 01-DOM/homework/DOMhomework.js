@@ -90,6 +90,8 @@ toDoShell.className = "toDoShell"; //ingreso a la propiedad y asigno.
     toDoText.className = 'completeText'; //a la clase seteale la clase "completeText"
   }
  toDoShell.appendChild(toDoText);
+
+ toDoText.addEventListener('click', completeToDo)
  return toDoShell;
 }
 
@@ -156,7 +158,7 @@ function addToDo() {
   let newToDo = new ToDo(toDoInput.value); //me pasa el valor que voy ingresando a la lista agregar
 //creo nueva instancia para que cree un nuevo ToDo
   toDoItems.push(newToDo); //agrega al array que estaba el nuevo
-  toDoInput.value = ""; // su valor lo setea a vacio para resetear
+  toDoInput.value = ''; // su valor lo setea a vacio para resetear
   displayToDos(); //si no llamo no se va a actualizar la parte visual
   
 }
@@ -169,8 +171,8 @@ function addToDo() {
 // Tu código acá:
 
 let btnAdd = document.querySelector('#addButton');
-btnAdd.addEventListener('click', addToDo); //cuando hagas click en este boton quiero que ejecutes addToDo
-
+//btnAdd.addEventListener('click', addToDo); //cuando hagas click en este boton quiero que ejecutes addToDo
+btnAdd.onclick = addToDo;
 
 // La función completeToDo se va a ejecutar cuando queramos completar un todo
 // [NOTA: Algunas cuestiones a tener en cuenta
@@ -186,8 +188,10 @@ btnAdd.addEventListener('click', addToDo); //cuando hagas click en este boton qu
 
 function completeToDo(event) {
   // DESCOMENTAR LA SIGUIENTE LINEA
-  // const index = event.target.id;
+   const index = event.target.id;
   // Tu código acá:
+  toDoItems = [index].completeToDo();
+  displayToDos();
 
 }
 
