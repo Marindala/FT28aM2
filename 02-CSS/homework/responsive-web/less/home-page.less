@@ -3,6 +3,17 @@
 .home {
 
   .intro {
+    //dentro de home y dentro de intro
+
+    img {
+      //border-radius: 5%;
+      .img-rounded(50px); //otra opción para border, lo agregué en mixins
+
+      @media (max-width: @phone) {
+        width: 100;
+      }
+
+    }
 
     h2 {
       padding: 15px;
@@ -24,6 +35,18 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    .tecnologia, .ondas {
+      @media (max-width: @phone){
+        display: none;
+      }
+    }
+
+    .auricular {
+      @media (max-width: @phone){
+        display: 100;
+      }
     }
   }
 
@@ -58,6 +81,7 @@
       }
 
       .btn {
+        .btn-henry(@btn-bg-color, white);
       }
     }
 

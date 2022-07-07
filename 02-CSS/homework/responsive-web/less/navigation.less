@@ -1,1 +1,28 @@
-// Código de Nav acá
+// Código de Nav acá 
+//uso de variables y anidado
+nav {
+    //display: flex;
+    //flex-direction: column; //para que genere columna un texto abajo del otro
+    //align-items: center;
+    .flex(@direction: column, @align: center); //cambio por lo que generé en mixins
+     background-color: @nav-bg;
+    ul { //dentro del nav tengo el ul
+        //display: flex;
+        //justify-content: space-around;
+        .flex(row, space-around, center);
+        width: 30%;
+        margin: 10px;
+
+        @media (max-width: @phone){
+            width: 70%;
+        }
+
+    }
+
+    a{
+        white-space: nowrap; //mantiene todo en una línea
+        text-decoration: none;
+        color: @nav-font;
+        font-weight: bold;
+    }
+}

@@ -1,1 +1,45 @@
 // Mixins acá
+.flex(@direction: row, @justify: center, @align: center) { //agrego valores por defecto row, center y center
+    display: flex;
+    flex-direction: @direction; //seteale un flex-direction según la direccion que te pasen
+    justify-content: @justify; // seteale un justify-content según l
+    align-items: @align;//seteale un align-items según el align que te pasen
+}
+
+.img-rounded(@radius: 5px) {
+    border-radius: @radius;
+}
+
+.btn(){
+   
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-btn-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: var(--bs-btn-bg);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-henry (@bgColor, @fontColor) {
+    .btn(); //que tenga todo lo de btn
+    color: @fontColor;
+    background-color: @bgColor;
+
+    &:hover { //seudo selector
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+}
