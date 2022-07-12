@@ -28,7 +28,7 @@ Este es un tema muy particular, ya que se está cambiando la filosofía que teni
 ## Estilos Inline
 
 Una de las formas de dar Estilos a los Componentes es usando el atributo `style` del mismo. En react esta propiedad recibe un _objeto JavaScript_ y no una _Css String_ como en HTML nativo. Por lo tanto, vamos a tener que cambiar un poco la sintaxis de las reglas _CSS_. Veamos el ejemplo de la [documentación](https://facebook.github.io/react/docs/dom-elements.html#style) de react:
-
+ 
 ```jsx
 const divStyle = {
   color: 'blue',

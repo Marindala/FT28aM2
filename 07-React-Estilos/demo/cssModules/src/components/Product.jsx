@@ -1,5 +1,5 @@
 import React from 'react';
-import s from  './Product.css';
+import s from  './Product.css'; //global para todos
 
 
 function Product(props) {
