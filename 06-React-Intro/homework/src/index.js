@@ -4,6 +4,6 @@ import './index.css';
 import App from './App';
 
 ReactDOM.render(
-    <App />,
-  document.getElementById('root')
+    <App />, //componente principal
+  document.getElementById('root') //enchufa ajaj el primer componente principal al HTML
 );
