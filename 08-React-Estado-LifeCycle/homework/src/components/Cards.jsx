@@ -12,8 +12,9 @@ export default function Cards({cities, onClose}) {
             min={c.min}
             name={c.name}
             img={c.img}
-            onClose={() => onClose(c.id)}
+            onClose={() => onClose(c.id)} //de acá sale el id para eliminar filtrar
             id={c.id}
+            key={c.id}
           /> )}
       </div>
     );
