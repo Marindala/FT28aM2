@@ -1,3 +1,26 @@
 #logoHenry {
   margin-right: 20px;
+  color: yellow;
+ 
+}
+
+.span.navbar-brand{
+font:30px;
+}
+
+.navbar-dark .navbar-brand{
+ color: yellow;
+ font: bold;
+ font-size: 26px;
+
+}
+
+.about{
+  color:yellow;
+}
+
+.img{
+    height: 2px;
+    width: 2px;
+    color: yellow;
 }

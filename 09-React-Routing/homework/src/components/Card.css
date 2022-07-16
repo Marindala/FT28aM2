@@ -1,6 +1,9 @@
 .card {
   margin: 20px;
   width: 18rem;
+  border: 1%;
+  border-color: rgb(1, 1, 1);
+
 }
 
 .card-title {
@@ -12,9 +15,31 @@
   justify-content: flex-end;
   margin-right: 8px;
   margin-top: 8px;
+  
 }
 
 .card-body {
   margin-top: 0px !important;
   padding-top: 0px !important;
+  background-image:url();
+  filter: alpha(opacity=30);
+  box-shadow: -3px -3px 9px #aaa9a9a2;
+  background-color: rgba(255,255,255,0.13);
+  backdrop-filter: blur(10px);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRREZv5I8O4360DfcLaRpkRd4ZEurw40cLCA&usqp=CAU);
 }
+ .card-title{
+  color: #343434;
+ } 
+
+.btn {
+  background-color: #343434;
+
+  color: yellow;
+  border-color: yellow;
+  
+ }
+  
+
+
+

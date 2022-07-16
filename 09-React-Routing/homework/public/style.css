@@ -1,0 +1,12 @@
+.body {
+
+    background-image: url(https://fondosmil.com/fondo/27688.jpg);
+    font-size: 1.5em;
+
+
+}
+
+,title{
+    color: black;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
