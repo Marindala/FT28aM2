@@ -75,9 +75,9 @@ Tienes que crear los 4 reducers para las 4 acciones que creamos anteriormente qu
 > Aca abajo le dejamos dos ejemplos, vas a tener que crear los dos restantes
 
 ```javascript
-function rootReducer(state = initialState, action) {
+    function rootReducer(state = initialState, action) {
   if (action.type === "ADD_MOVIE_FAVORITE") {
-      return {
+    return {
         ...state,
         moviesFavourites: state.moviesFavourites.concat(action.payload)
       }

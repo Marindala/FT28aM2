@@ -8,7 +8,7 @@ import Movie from "./components/Movie/Movie";
 
 function App() {
   return (
-      <React.Fragment>
+      <React.Fragment> 
           <NavBar />
           <Route exact path="/" component={Buscador} />
           <Route path="/favs" component={Favorites} />
@@ -18,3 +18,6 @@ function App() {
 }
 
 export default App;
+
+// <React.Fragment> cuando queremos devolver más de 1 componente también se pone así <> </>
+//también puede ir con un div
